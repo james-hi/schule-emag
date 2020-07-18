@@ -1,1 +1,1 @@
-
+chmod ugo=rw messages.json
