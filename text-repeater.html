@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>Text-Repeater</title>
+</head>
+<body>
+<h1>Text-Repeater</h1>
+<br><br>
+<link rel="stylesheet" href="look.css">
+<p class="" id="Absatz"></p> 
+<button id="id1">X1</button>
+<button id="id2">X2</button>
+<button id="id10">X10</button>
+<button id="id100">X100</button>
+<br> <br>
+<input type="text" id="input" placeholder="Hier den Text eingeben...">
+<script> 
+
+var elem = document.getElementById('id1');
+
+elem.addEventListener('click', X1);
+ 
+function X1() {
+var input = document.createTextNode(document.getElementById("input").value +" ");
+     document.getElementById('Absatz').appendChild(input);
+};
+      
+var elem = document.getElementById('id2');
+
+elem.addEventListener('click', X2); function X2() {
+var input = document.createTextNode(document.getElementById("input").value +" "+  document.getElementById("input").value+"  ");
+ document.getElementById('Absatz').appendChild(input);
+};
+
+var elem = document.getElementById('id10');
+elem.addEventListener('click', X10);
+function X10() {
+var input = document.createTextNode(
+document.getElementById("input").value +" " + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" ");
+document.getElementById('Absatz').appendChild(input);
+};
+
+var elem = document.getElementById('id100');
+elem.addEventListener('click', X100);
+function X100() {
+var input = document.createTextNode(
+document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" " +
+document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" " +
+document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" " +
+document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" " +
+document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" " +
+document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" "  + document.getElementById("input").value +" " + document.getElementById("input").value +" "+   document.getElementById("input").value +" "+   document.getElementById("input").value +" "+   document.getElementById("input").value +" "+   document.getElementById("input").value +" "+   document.getElementById("input").value +" "+   document.getElementById("input").value +" "+   document.getElementById("input").value +" "+   document.getElementById("input").value +" "+   document.getElementById("input").value +" "+   document.getElementById("input").value +" "+   document.getElementById("input").value +" "+   document.getElementById("input").value +" "+   document.getElementById("input").value +" "+   document.getElementById("input").value +" "+   document.getElementById("input").value +" "+   document.getElementById("input").value +" "+   document.getElementById("input").value +" "+   document.getElementById("input").value +" "+   document.getElementById("input").value +" "+   document.getElementById("input").value +" "+   document.getElementById("input").value +" "+   document.getElementById("input").value +" "+   document.getElementById("input").value +" "+   document.getElementById("input").value +" "+   document.getElementById("input").value +" "+   document.getElementById("input").value +" "+   document.getElementById("input").value +" "+   document.getElementById("input").value +" "+   document.getElementById("input").value +" "+   document.getElementById("input").value +" "+   document.getElementById("input").value +" "+   document.getElementById("input").value +" "+   document.getElementById("input").value +" "+   document.getElementById("input").value +" "+   document.getElementById("input").value +" "+   document.getElementById("input").value +" "+   document.getElementById("input").value +" "+   document.getElementById("input").value +" "+   document.getElementById("input").value +" "
+);
+document.getElementById('Absatz').appendChild(input);
+};
+</script>
+<br><br>
+<a href="index.html"><button>Zurück zum Start</button></a>
+</body>
+</html>
