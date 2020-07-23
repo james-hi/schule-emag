@@ -1,0 +1,12 @@
+<h1>Javascript-prüfer</h1>
+<p>Wenn im unteren Feld steht "Javascript ist aktiviert", dann ist Javascript in ihren Browser aktiviert. Wenn dort steht, dass Javascript nicht aktiviert ist, dann wenden die sich an ihren Browser</p>
+
+<input type="text" id="Anzeige" readonly>
+<script>
+document.getElementById("Anzeige").value = "Javascript ist aktiviert";
+</script>
+<noscript>
+<script>
+document.getElementById("Anzeige").value = "Javasript ist leider nicht aktiviert";
+</script>
+</noscript>
