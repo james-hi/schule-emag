@@ -1,0 +1,21 @@
+ h1 {
+ color:red;
+ }
+ a {
+ color: #000000;
+ text-decoration:none;
+ }
+ #uhr {
+		color: #ff005b; 
+		background-color: #1eff00; 
+		border: 5px solid; 
+		margin: 10; 
+ }
+ #warning {
+ color: #ff0000;
+ height:30px ;
+ wight:45px ;
+ }
+ #output2{
+ height: 50px;
+ }
