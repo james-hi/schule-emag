@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hangman</title>
+        <link href="hangman.css" rel="stylesheet">
+    </head>
+    <body>
+    <button onclick= "replay();" id="Restart"> Restart</button>
+    <!--
+        Created by Alex Tusinean
+        
+        16.09.2019
+        
+        Run again to see what happens
+        
+        If you like my code, remember to leave an Upvote.
+        
+        improved and translate by Jamie                  Latus
+        8.-6. August. 2020
+    -->
+        <div id="back"></div>
+        <table>
+            <tr>
+                <td class="td">q</td>
+                <td class="td">w</td>
+                <td class="td">e</td>
+                <td class="td">r</td>
+                <td class="td">t</td>
+                <td class="td">y</td>
+                <td class="td">u</td>
+                <td class="td">i</td>
+                <td class="td">o</td>
+            </tr>            
+            <tr>
+                <td class="td">p</td>
+                <td class="td">a</td>
+                <td class="td">s</td>
+                <td class="td">d</td>
+                <td class="td">f</td>
+                <td class="td">g</td>
+                <td class="td">h</td>
+                <td class="td">j</td>
+                <td class="td">k</td>
+            </tr>            
+            <tr>
+                <td class="td">l</td>
+                <td class="td">z</td>
+                <td class="td">x</td>
+                <td class="td">c</td>
+                <td class="td">v</td>
+                <td class="td">b</td>
+                <td class="td">n</td>
+                <td class="td">m</td>
+                <td class="td">ß</td>
+            </tr>
+            <tr>
+                <td class="td">Ä</td>
+                <td class="td">Ö</td>
+                <td class="td">Ü</td>
+                <td onclick= "replay();" id="Restart" class="td"> Restart</td>
+                <td class="td" onclick="back();">Zurück</td>
+            </tr>
+        </table>        
+        <div id="hang">
+            <div id="woodFoot"></div>
+            <div id="woodLeg"></div>
+            <div id="woodArm"></div>
+            <div id="theMan">
+                <div id="rope"></div>
+                <div id="manHead"></div>
+                <div id="manBody"></div>
+                <div class="al" id="manArms"></div>
+                <div class="al" id="manLegs"></div>
+                <div id="fire"></div>
+                <div id="fire2"></div>
+            </div>
+        </div>       
+        <p id="word"></p>
+        <div id="bar"></div>       
+        <div id="loader">
+            <p><span style=color:green;font-size:110%;>H</span><span style=color:red;>a</span><span style=color:blue;font-size:110%;>n</span><span style=color:purple;font-size:92%;>g</span><span style=color:green;>m</span><span style=color:red;font-size:113%;>a</span><span style=color:blue;font-size:105%;>n</span> <span style=color:gold;font-size:110%;>U</span><span style=color:blue;>n</span><span style=font-size:90%;color:magenta;>l</span><span style=color:gold;font-size:115%;>i</span><span style=color:green;>m</span><span style=color:gold;font-size:112%;>i</span><span style=color:red;font-size:115%;>t</span><span style=color:purple;>e</span><span style=color:aqua;>d</span><br><br>Loading...</p>
+        </div>
+        <script src="hangman.js"></script>
+        <!-- Created by Alex Tusinean -->
+        <!--Hidden word: wikipedia -->
+    </body>
+</html>
