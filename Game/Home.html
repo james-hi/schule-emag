@@ -1,0 +1,28 @@
+<html>
+  <head>
+  <link rel="stylesheet" href="home.css">
+  </head>
+  <body>
+  <h1>Was willst du zocken???</h1>
+  <h3>Hier eine Auswahl an Spielen</h3>
+  <p>Und gebe dann hier den Game-code ein</p>
+  <input placeholder="Game-code" id="gamecode" maxlength="4" minlength="4">
+  <button onclick="go();">go</button>
+  <div class="games">
+  <h2>Hangman</h2>
+  <p>Das typische Hangman Spiel</p>
+  <h5>Game code: 1h2j</h5>
+  </div>
+  <script>
+  function go() {
+  				var  gamecode = document.getElementById("gamecode").value
+  				if (gamecode === "1h2j"){
+  								window.location="hangman/hangman.html";
+  								} 
+  								//else if(gamecode === ){
+  												
+  												//}
+  				}
+  </script>
+  </body>
+</html>
