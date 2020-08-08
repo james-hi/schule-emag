@@ -6,7 +6,7 @@ body{
 .td{
     border:1px solid black;
     text-align:center;
-    width:10vw; 
+    width:device-width; 
     height:8vh; 
 }
 
