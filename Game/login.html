@@ -1,0 +1,27 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="test.css"> 
+</head>
+<body>
+<input id="input">
+<button onclick="Ask();">hi</button>
+<h6>Gast account: <br>
+    Username: Gast
+</h6>
+<script>
+function Ask(){
+				var input = document.getElementById("input").value;
+				var user1 = "James";
+				var user2 = "Werner";
+				var user3 = "Clemens";
+				var userGast = "Gast"
+				if (input === user1 || input === user2 || input === user3 || input === userGast){
+										window.location="test.html";
+								}
+					else {
+									alert("Dieser user existiert leider nicht"); 
+									}
+				}
+</script>
+</body>
+</html>
