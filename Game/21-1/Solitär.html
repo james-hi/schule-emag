@@ -1,0 +1,68 @@
+<html>
+<head>
+<link rel="stylesheet" href="Solitär.css">
+</head>
+<body>
+<h1>21-1 Solitär</h1>
+<button id="eins" onclick="go1(),check(),plus();"></button>
+<button id="zwei" onclick="go2(),check(),plus();"></button>
+<p id="score-output">Dein Score ist: 0</p>
+<input type="number" id="Zahl" value="10" readonly></input>
+<script>
+var eins= Math.floor(Math.random()*(6 - -5 + 1) + -5);
+
+document.getElementById("eins").innerHTML = eins
+
+function go1() {
+				
+document.getElementById("Zahl").value = parseInt(document.getElementById("Zahl").value) + parseInt(document.getElementById("eins").innerHTML)
+
+var eins = Math.floor(Math.random()*(6 - -5 + 1) + -5);
+  	 document.getElementById("eins").innerHTML = eins
+				}
+
+//zahl2
+
+var zwei = Math.floor(Math.random()*(6 - -5 + 1) + -5);
+
+document.getElementById("zwei").innerHTML = zwei
+
+function go2() {
+
+document.getElementById("Zahl").value = parseInt(document.getElementById("Zahl").value) + parseInt(document.getElementById("zwei").innerHTML)
+
+				var zwei = Math.floor(Math.random()*(6 - -5 + 1) + -5);
+	document.getElementById("zwei").innerHTML = zwei
+				};
+
+//über 20 und unter 1
+function check(){
+var hi = document.getElementById("Zahl").value
+
+if (hi < 1 || hi > 20){
+				var restart = confirm('Sie haben verloren! Wollen sie es nochmal versuchen?');
+				 	if (restart === false) {
+				 					window.location.href ="https://james-hi.github.io/schule-emag/Game/Home.html"
+				 	} else {
+				 					location.reload()
+				 					}
+				};
+}
+
+//score
+
+var hi = 0;
+
+function plus(){
+				
+				hi = hi + 1;
+				document.getElementById("score-output").innerHTML = "Dein Score ist: " + hi;
+				};
+
+</script>
+<br></br>
+<button>
+<a href="https://james-hi.github.io/schule-emag/Game/Home.html">Zurück zum Start</a>
+</button><br></br>
+</body>
+</html>
