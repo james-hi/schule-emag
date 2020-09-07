@@ -3,8 +3,9 @@ function Ask(){
 				var user1 = "James";
 				var user2 = "Werner";
 				var user3 = "Clemens";
+                                var user4 = "Tyson"
 				var userGast = "Gast"
-				if (input === user1 || input === user2 || input === user3 || input === userGast){
+				if (input === user1 || input === user2 || input === user3 || input === userGast || input === user4){
 							 window.location="Home.html";
 							 
 								}
